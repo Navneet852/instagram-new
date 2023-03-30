@@ -9,13 +9,14 @@
 
 .frame {
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    column-gap: 20px;
+    grid-template-columns: 1fr 3fr 1.6fr;
+    height: 100vh;
 }
 
 .menu {
     border: 1px solid rgb(255, 239, 228);
     display: flex;
+    position: relative;
     flex-direction: column;
     height: 100vh;
 }
@@ -23,15 +24,15 @@
 .menu1 {
     overflow: scroll;
     align-items: center;
+    border: none;
 }
 
 .menu1::-webkit-scrollbar {
     display: none;
 }
-
 #logo {
     margin: 20px;
-    height: 35px;
+    height: 45px;
 }
 
 #profile {
@@ -53,8 +54,8 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .bottom {
@@ -67,20 +68,19 @@
 }
 
 .menu-bar img {
-    height: 22px;
+    height: 23px;
     margin: 15px;
 }
 
 .story {
     display: flex;
     justify-content: center;
-    margin: -20px 30px;
 }
 
 svg {
     stroke: #8a3ab8;
     stroke-linecap: round;
-    stroke-width: 1.5;
+    stroke-width: 1.7;
 
 }
 
@@ -95,16 +95,16 @@ svg {
         stroke: rgb(169, 95, 4);
         stroke-dasharray: 15;
     }
-    70%{
+
+    70% {
         stroke: rgb(255, 31, 154);
         stroke-dasharray: 5;
     }
 
     100% {
-        stroke: #8a3ab8;
+        stroke: #b5b5b5;
         stroke-dasharray: 0.1;
-        stroke-width: 0.5;
-        stop-color: black;
+        stroke-width: 0.7;
     }
 }
 
@@ -113,65 +113,79 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 8px;
-    font-size: 11px;
+    height: 140px;
+    width: 80px;
+    font-size: 12px;
     /* animation: dash 3s ease-out 1 forwards; */
 }
 
 .id img {
-    position: relative;
+    height: 60px;
+    position: absolute;
     border-radius: 50%;
-    top: 55.5px;
+    top: 32px;
 }
 
 .post {
     display: flex;
     flex-direction: column;
-    margin: 60px 0px;
+    margin: 20px 0px;
+    border-bottom:1px solid rgb(255, 239, 228);
 }
-.profile-icon img{
+
+.profile-icon img {
     border-radius: 50%;
-    padding: 1px;
 }
-.profile-loc{
+
+.profile-loc {
     font-size: 12px;
     /* color: #bbbbbb; */
     opacity: 0.7;
 
 }
+
 .posthead {
-    width: 360px;
     display: grid;
-    grid-template-columns: 0.6fr 4fr 0.5fr;
+    grid-template-columns: 0.4fr 3fr 0.2fr;
     align-items: center;
-    text-align: center;
-    margin: 2px;
+    text-align: left;
+    padding-left: 6px;
 }
 .posthead div li {
     list-style-type: none;
     text-align: left;
 }
-.menu2 .posthead{
-    margin: 5px;
-    grid-template-columns: 0.5fr 1fr 1fr;
+.menu2{
+    align-items: center;
+    border: none;
 }
-.menu2 .posthead a{
+.menu2 div{
+    margin: 3px;
+}
+.profile-main{
+    padding-top: 35px;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 0.6fr 2.8fr 0.1fr;
+}
+.menu2 .posthead a {
     font-size: 13px;
     text-decoration: none;
     padding: 2px 15px;
-    border-radius: 6px;
+    border-radius: 4px;
     color: white;
-    background-color: rgb(0, 59, 223);
+    background-color: #1877F2;
 }
-.postbottom{
-    
+.postbottom {
+
     display: flex;
     flex-direction: column;
     align-items: left;
 }
-.bottom_menu{
+
+.bottom_menu {
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr 1.5fr;
+    grid-template-columns: 0.1fr 0.17fr 0.17fr 1.5fr;
     align-items: center;
     text-align: right;
 }

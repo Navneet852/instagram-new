@@ -27,3 +27,7 @@ let svg6 = document.getElementById("svg6")
 svg6.addEventListener("click", function () {
     sv6.style.animation = "dash 3s ease-out 1 forwards";
 });
+let svg7 = document.getElementById("svg7")
+svg7.addEventListener("click", function () {
+    sv7.style.animation = "dash 3s ease-out 1 forwards";
+});
