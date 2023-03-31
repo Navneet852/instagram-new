@@ -25,11 +25,13 @@
     overflow: scroll;
     align-items: center;
     border: none;
+    display: none;
 }
 
 .menu1::-webkit-scrollbar {
     display: none;
 }
+
 #logo {
     margin: 20px;
     height: 45px;
@@ -57,6 +59,7 @@
     font-weight: 500;
     font-size: 16px;
 }
+
 .bottom {
     position: absolute;
     bottom: 0;
@@ -130,7 +133,7 @@ svg {
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
-    border-bottom:1px solid rgb(255, 239, 228);
+    border-bottom: 1px solid rgb(255, 239, 228);
 }
 
 .profile-icon img {
@@ -151,24 +154,29 @@ svg {
     text-align: left;
     padding-left: 6px;
 }
+
 .posthead div li {
     list-style-type: none;
     text-align: left;
 }
-.menu2{
+
+.menu2 {
     align-items: center;
     border: none;
 }
-.menu2 div{
+
+.menu2 div {
     margin: 3px;
 }
-.profile-main{
+
+.profile-main {
     padding-top: 35px;
     margin: 2px;
     display: grid;
     grid-template-columns: 0.6fr 2.8fr 0.1fr;
     border-bottom: 1px solid rgb(255, 239, 228);
 }
+
 .menu2 .posthead a {
     font-size: 13px;
     text-decoration: none;
@@ -177,6 +185,7 @@ svg {
     color: white;
     background-color: #1877F2;
 }
+
 .postbottom {
 
     display: flex;
@@ -189,4 +198,40 @@ svg {
     grid-template-columns: 0.1fr 0.17fr 0.17fr 1.5fr;
     align-items: center;
     text-align: right;
+}
+
+/* search page */
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.posts::-webkit-scrollbar {
+    display: none;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 420px;
+    overflow: scroll;
+    border-radius: 8px;
+}
+
+input {
+    height: 65px;
+    width: 340px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(229, 229, 230);
+    padding-left: 20px;
+    font-size: 14px;
+    margin: 50px;
+}
+
+.posts div {
+    height: 140px;
 }
