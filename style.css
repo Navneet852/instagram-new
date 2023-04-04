@@ -20,10 +20,14 @@
     flex-direction: column;
     height: 100vh;
 }
-
+.postman{
+    text-decoration: none;
+    color: black;
+}
 .menu1 {
     overflow: scroll;
     align-items: center;
+    border: none;
 }
 
 .menu1::-webkit-scrollbar {
@@ -207,39 +211,3 @@ svg {
     text-align: right;
 }
 
-/* search page */
-
-.search{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    display: none;
-}
-.posts::-webkit-scrollbar {
-    display: none;
-}
-
-.posts {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 420px;
-    overflow: scroll;
-    border-radius: 8px;
-}
-
-input {
-    height: 65px;
-    width: 340px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    background-color: rgb(229, 229, 230);
-    padding-left: 20px;
-    font-size: 14px;
-    margin: 50px;
-}
-
-.posts div {
-    height: 140px;
-}
