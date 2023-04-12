@@ -73,14 +73,88 @@ follow5.addEventListener("click", () => {
 // let main = document.getElementsByClassName("main")[0]
 // let search = document.getElementsByClassName("search")[0]
 
-let heart = document.getElementById('heart')
-let number = document.getElementById("number")
-heart.addEventListener("click", () => {
-    number.innerHTML = "2,99,793 likes";
-    if (heart.src.match("heart")) {
-        heart.src = "./images/redheart.png";
+let heart1 = document.getElementById('heart1')
+let number1 = document.getElementById("number1")
+let ani_1 = document.getElementById("dbl-ani1")
+let ani1 = document.getElementById("ani1")
+
+ani_1.addEventListener("dblclick", () => {
+    ani1.style.animation = "heart 0.8s ease forwards"
+    ani1.style.opacity = '1'
+    if (heart1.src.match("heart")) {
+        heart1.src = "./images/redheart.png";
+        number1.innerHTML = "2,99,793 likes";
     }
-    // else {
-    //     heart.src = "./images/heart.png";
-    // }
+})
+heart1.addEventListener("click", () => {
+    ani1.style.animation = "heart 0.8s ease forwards"
+    ani1.style.opacity = '1'
+    if (heart1.src.match("heart")) {
+        heart1.src = "./images/redheart.png";
+        number1.innerHTML = "2,99,793 likes";
+    }
+})
+
+let heart2 = document.getElementById('heart2')
+let number2 = document.getElementById("number2")
+let ani_2 = document.getElementById("dbl-ani2")
+let ani2 = document.getElementById("ani2")
+ani_2.addEventListener("dblclick", () => {
+    ani2.style.animation = "heart 0.8s ease forwards"
+    ani2.style.opacity = '1'
+    if (heart2.src.match("heart")) {
+        heart2.src = "./images/redheart.png";
+        number2.innerHTML = "76,793 likes";
+    }
+})
+heart2.addEventListener("click", () => {
+    ani2.style.animation = "heart 0.8s ease forwards"
+    ani2.style.opacity = '1'
+    if (heart2.src.match("heart")) {
+        heart2.src = "./images/redheart.png";
+        number2.innerHTML = "76,793 likes";
+    }
+})
+
+let heart3 = document.getElementById('heart3')
+let number3 = document.getElementById("number3")
+let ani_3 = document.getElementById("dbl-ani3")
+let ani3 = document.getElementById("ani3")
+ani_3.addEventListener("dblclick", () => {
+    ani3.style.animation = "heart 0.8s ease forwards"
+    ani3.style.opacity = '1'
+    if (heart3.src.match("heart")) {
+        heart3.src = "./images/redheart.png";
+        number3.innerHTML = "9,99,793 likes";
+    }
+})
+heart3.addEventListener("click", () => {
+    ani3.style.animation = "heart 0.8s ease forwards"
+    ani3.style.opacity = '1'
+    if (heart3.src.match("heart")) {
+        heart3.src = "./images/redheart.png";
+        number3.innerHTML = "9,99,793 likes";
+    }
+})
+
+
+let heart4 = document.getElementById('heart4')
+let number4 = document.getElementById("number4")
+let ani_4 = document.getElementById("dbl-ani4")
+let ani4 = document.getElementById("ani4")
+ani_4.addEventListener("dblclick", () => {
+    ani4.style.animation = "heart 0.8s ease forwards"
+    ani4.style.opacity = '1'
+    if (heart4.src.match("heart")) {
+        heart4.src = "./images/redheart.png";
+        number4.innerHTML = "24,057 likes";
+    }
+})
+heart4.addEventListener("click", () => {
+    ani4.style.animation = "heart 0.8s ease forwards"
+    ani4.style.opacity = '1'
+    if (heart4.src.match("heart")) {
+        heart4.src = "./images/redheart.png";
+        number4.innerHTML = "24,057 likes";
+    }
 })

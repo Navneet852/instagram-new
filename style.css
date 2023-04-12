@@ -20,10 +20,12 @@
     flex-direction: column;
     height: 100vh;
 }
-.postman{
+
+.postman {
     text-decoration: none;
     color: black;
 }
+
 .menu1 {
     overflow: scroll;
     align-items: center;
@@ -43,11 +45,13 @@
     height: 20px;
     border-radius: 50%;
 }
-#hover1{
+
+#hover1 {
     background-color: rgb(247, 244, 247);
     font-weight: 700;
     border-radius: 0px 12px 12px 0px;
 }
+
 #hover1:hover,
 #hover2:hover,
 #hover3:hover,
@@ -163,6 +167,30 @@ svg {
     padding-left: 6px;
 }
 
+.post-anim {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 445px;
+    height: 510px;
+}
+
+#ani1,#ani2,#ani3,#ani4 {
+    position: absolute;
+    height: 30vh;
+    opacity: 0;
+}
+@keyframes heart {
+    0% {height: 10vh;}
+    25%{height: 30vh;}
+    45%{height: 25vh;}
+    60%{height: 33vh;}
+    85%{height: 20vh;}
+    99%{height: 30vh;}
+    100%{opacity: 0;}
+}
+
 .posthead div li {
     list-style-type: none;
     text-align: left;
@@ -176,7 +204,8 @@ svg {
 .menu2 div {
     margin: 3px;
 }
-.menu2 .posthead{
+
+.menu2 .posthead {
     width: 350px;
 }
 
@@ -210,4 +239,3 @@ svg {
     align-items: center;
     text-align: right;
 }
-
