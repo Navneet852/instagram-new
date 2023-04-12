@@ -136,7 +136,9 @@
     overflow: scroll;
     border-radius: 8px;
 }
-
+.posts img:hover{
+    filter: blur(3px);
+}
 input {
     height: 65px;
     width: 340px;
