@@ -176,19 +176,43 @@ svg {
     height: 510px;
 }
 
-#ani1,#ani2,#ani3,#ani4 {
+#ani1,
+#ani2,
+#ani3,
+#ani4 {
     position: absolute;
     height: 30vh;
     opacity: 0;
 }
+
 @keyframes heart {
-    0% {height: 10vh;}
-    25%{height: 30vh;}
-    45%{height: 25vh;}
-    60%{height: 33vh;}
-    85%{height: 20vh;}
-    99%{height: 30vh;}
-    100%{opacity: 0;}
+    0% {
+        height: 10vh;
+    }
+
+    25% {
+        height: 30vh;
+    }
+
+    45% {
+        height: 25vh;
+    }
+
+    60% {
+        height: 33vh;
+    }
+
+    85% {
+        height: 20vh;
+    }
+
+    99% {
+        height: 30vh;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .posthead div li {
@@ -238,4 +262,50 @@ svg {
     grid-template-columns: 0.1fr 0.17fr 0.17fr 1.5fr;
     align-items: center;
     text-align: right;
+}
+
+@media only screen and (max-width:1150px) and (min-width:750px) {
+    .menu2 {
+        display: none;
+    }
+
+    .frame {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width:750px) and (min-width:460px) {
+    .menu2,.text {
+        display: none;
+    }
+    .menu0{
+        align-items: center;
+    }
+    #logo{
+        content:url("./images/instagram-short.png");
+        height: 32px;
+    }
+    .frame {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .menu0,
+    .menu2 {
+        display: none;
+    }
+
+    .frame {
+        grid-template-columns: auto;
+    }
+    .posthead{
+        grid-template-columns: 0.4fr 3fr auto;
+        width: 100vw;
+    }
+    .menu1{
+        margin: 10px;
+        position: absolute;
+    }
+    .story {}
 }
