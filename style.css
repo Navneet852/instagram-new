@@ -27,7 +27,7 @@
 }
 
 .menu1 {
-    overflow: scroll;
+    /* overflow: scroll; */
     align-items: center;
     border: none;
 }
@@ -86,7 +86,6 @@
     height: 23px;
     margin: 15px;
 }
-
 .story {
     display: flex;
     justify-content: center;
@@ -327,8 +326,17 @@ svg {
         width: 100vw;
         height: auto;
     }
+    .menu1{
+        width: 100%;
+    }
+    .story-outer{
+        
+    }
     .story{
-        display: none;
+        position: relative;
+        width: 100vw;
+        overflow: auto;
+        direction: ltr;
     }
     .profile-icon{
         margin: 0px 5px;
