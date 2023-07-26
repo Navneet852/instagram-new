@@ -27,7 +27,7 @@
 }
 
 .menu1 {
-    /* overflow: scroll; */
+    overflow: scroll;
     align-items: center;
     border: none;
 }
@@ -89,7 +89,7 @@
 .story {
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 120px;
     width: 500px;
 }
 
@@ -297,9 +297,23 @@ svg {
     }
 }
 @media screen and (max-width:650px) and (min-width:500px){
-    .story{
-       
+    .frame {
+        grid-template-columns: auto auto;
     }
+    .menu2,.text{
+        display: none;
+    }
+    #logo{
+        content:url("./images/instagram-short.png");
+        height: 32px;
+    }
+    #svg7{
+        display: none;
+    }
+    .id{
+        width: 70px;
+    }
+    
 }
 
 @media screen and (max-width:500px) {
@@ -307,10 +321,6 @@ svg {
     .menu0,
     .menu2 {
         display: none;
-    }
-    .menu1{
-        margin: 50px 0px;
-        overflow: scroll;
     }
     .frame {
         grid-template-columns: auto;
@@ -327,16 +337,8 @@ svg {
         height: auto;
     }
     .menu1{
-        width: 100%;
-    }
-    .story-outer{
-        
-    }
-    .story{
-        position: relative;
-        width: 100vw;
-        overflow: auto;
-        direction: ltr;
+        margin-top: 50px;
+        padding-bottom: 50px;
     }
     .profile-icon{
         margin: 0px 5px;
@@ -346,6 +348,16 @@ svg {
     }
     #logo{
         margin: 0px 10px;
+    }
+    #svg7{
+        display: none;
+    }
+    .story{
+        width: 100vw;
+    }
+    .id{
+        min-width: 68px;
+        max-width: 80px;
     }
     .menu-top{
         position: fixed;
@@ -358,7 +370,7 @@ svg {
         width: 100vw;
     }
     .menu-top img{
-        height: 25px;
+        height: 23px;
         margin: 10px 0px;
     }
     .menu-bottom{
@@ -373,5 +385,10 @@ svg {
     }
     #hover1{
         border-radius: 20px;
+    }
+}
+@media screen and (max-width:400px){
+    #svg6{
+        display: none;
     }
 }
