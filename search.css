@@ -129,12 +129,16 @@
     display: none;
 }
 
-.posts {
+.posts{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(repeat,auto);
     width: 420px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border-radius: 8px;
+}
+.posts img{
+    height: 140px;
 }
 .posts img:hover{
     filter: blur(3px);
@@ -150,7 +154,83 @@ input {
     font-size: 14px;
     margin: 50px;
 }
+#input-search{
+    display: none;
+}
+.menu-bottom{
+    display: none;
+}
+@media only screen and (max-width:950px) and (min-width:750px) {
+    .menu2 {
+        display: none;
+    }
 
-.posts div {
-    height: 140px;
+    .frame {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width:750px) and (min-width:500px) {
+    .menu2,.text {
+        display: none;
+    }
+    .menu0{
+        align-items: center;
+    }
+    #logo{
+        content:url("./images/instagram-short.png");
+        height: 32px;
+    }
+    .frame {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:500px) {
+
+    .menu0,
+    .menu2 {
+        display: none;
+    }
+    .menu1{
+        width: 100vw;
+    }
+    .frame {
+        grid-template-columns: auto;
+    }
+    .menu-bottom{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+    #hover2{
+        border-radius: 20px;
+    }
+    input{
+        position: fixed;
+        width: 80%;
+        height: 40px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+    .posts div{
+    
+    }
+    .posts{
+        grid-template-columns: repeat(auto-fit, minmax(140px,170px));
+        width: 100vw;
+        height: 100vh;
+        margin-top: 60px;
+        border-radius: 0;
+        object-fit: contain;
+    }
+    .posts img{
+        /* max-height: 170px;
+        min-height: auto; */
+    }
+    
 }

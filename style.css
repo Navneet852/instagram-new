@@ -296,7 +296,7 @@ svg {
         grid-template-columns: auto auto;
     }
 }
-@media screen and (max-width:650px) and (min-width:500px){
+@media screen and (max-width:650px) and (min-width:501px){
     .frame {
         grid-template-columns: auto auto;
     }
@@ -316,7 +316,7 @@ svg {
     
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:499px) {
 
     .menu0,
     .menu2 {
