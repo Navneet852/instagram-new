@@ -6,6 +6,7 @@
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
     font-family: Nunito;
 }
+
 .frame {
     display: grid;
     grid-template-columns: 1fr 3fr 1.6fr;
@@ -19,10 +20,12 @@
     flex-direction: column;
     height: 100vh;
 }
-.postman{
+
+.postman {
     text-decoration: none;
     color: black;
 }
+
 #logo {
     margin: 20px;
     height: 45px;
@@ -32,11 +35,13 @@
     height: 20px;
     border-radius: 50%;
 }
-#hover2{
+
+#hover2 {
     background-color: rgb(247, 244, 247);
     font-weight: 700;
     border-radius: 0px 12px 12px 0px;
 }
+
 #hover1:hover,
 #hover2:hover,
 #hover3:hover,
@@ -71,6 +76,7 @@
     height: 23px;
     margin: 15px;
 }
+
 .profile-icon img {
     border-radius: 50%;
 }
@@ -81,6 +87,7 @@
     opacity: 0.7;
 
 }
+
 .posthead {
     display: grid;
     grid-template-columns: 0.4fr 3fr 0.2fr;
@@ -88,18 +95,22 @@
     text-align: left;
     padding-left: 6px;
 }
+
 .posthead div li {
     list-style-type: none;
     text-align: left;
 }
+
 .menu2 div {
     margin: 3px;
 }
+
 .menu2 {
     align-items: center;
     border: none;
 }
-.menu2 .posthead{
+
+.menu2 .posthead {
     width: 350px;
 }
 
@@ -119,30 +130,35 @@
     color: white;
     background-color: #1877F2;
 }
-.search{
+
+.search {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
 }
+
 .posts::-webkit-scrollbar {
     display: none;
 }
 
-.posts{
+.posts {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3, auto);
     width: 420px;
     overflow-y: scroll;
     overflow-x: hidden;
     border-radius: 8px;
 }
-.posts img{
+
+.posts img {
     height: 140px;
 }
-.posts img:hover{
+
+.posts img:hover {
     filter: blur(3px);
 }
+
 input {
     height: 60px;
     width: 340px;
@@ -154,12 +170,15 @@ input {
     font-size: 14px;
     margin: 50px;
 }
-#input-search{
+
+#input-search {
     display: none;
 }
-.menu-bottom{
+
+.menu-bottom {
     display: none;
 }
+
 @media only screen and (max-width:950px) and (min-width:750px) {
     .menu2 {
         display: none;
@@ -169,34 +188,54 @@ input {
         grid-template-columns: auto auto;
     }
 }
+
 @media only screen and (max-width:750px) and (min-width:500px) {
-    .menu2,.text {
+
+    .menu2,
+    .text {
         display: none;
     }
-    .menu0{
+
+    .menu0 {
         align-items: center;
     }
-    #logo{
-        content:url("./images/instagram-short.png");
+
+    #logo {
+        content: url("./images/instagram-short.png");
         height: 32px;
     }
+
     .frame {
         grid-template-columns: auto auto;
     }
 }
+
 @media screen and (max-width:500px) {
+
+    #hover1:hover,
+    #hover2:hover,
+    #hover3:hover,
+    #hover4:hover,
+    #hover5:hover,
+    #hover6:hover,
+    #hover7:hover {
+        background-color: white;
+        font-weight: normal;
+        border-radius: 20px;
+    }
 
     .menu0,
     .menu2 {
         display: none;
     }
-    .menu1{
-    
-    }
+
+    .menu1 {}
+
     .frame {
         grid-template-columns: auto;
     }
-    .menu-bottom{
+
+    .menu-bottom {
         display: flex;
         position: fixed;
         bottom: 0;
@@ -207,26 +246,31 @@ input {
         align-items: center;
         width: 100vw;
     }
-    #hover2{
+
+    #hover2 {
         border-radius: 20px;
     }
-    input{
+
+    input {
         position: fixed;
         width: 80%;
         height: 35px;
         margin: 10px;
         border-radius: 12px;
     }
-    .posts{
+
+    .posts {
         width: 100%;
         height: 100vh;
         margin-top: 60px;
+        padding-bottom: 70px;
         border-radius: 0;
     }
-    .posts img{
+
+    .posts img {
         display: block;
         max-width: 100%;
         height: auto;
     }
-    
+
 }

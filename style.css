@@ -86,6 +86,7 @@
     height: 23px;
     margin: 15px;
 }
+
 .story {
     display: flex;
     justify-content: center;
@@ -149,11 +150,13 @@ svg {
     flex-direction: column;
     border-bottom: 1px solid rgb(255, 239, 228);
 }
-.profile-icon{
+
+.profile-icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .profile-icon img {
     border-radius: 50%;
 }
@@ -249,9 +252,11 @@ svg {
     color: white;
     background-color: #1877F2;
 }
-.pic{
+
+.pic {
     height: 500px;
 }
+
 .postbottom {
     margin: 5px 0px;
     display: flex;
@@ -266,12 +271,15 @@ svg {
     text-align: right;
     margin: 0px 5px;
 }
-.menu-top{
+
+.menu-top {
     display: none;
 }
-.menu-bottom{
+
+.menu-bottom {
     display: none;
 }
+
 @media only screen and (max-width:950px) and (min-width:750px) {
     .menu2 {
         display: none;
@@ -281,85 +289,121 @@ svg {
         grid-template-columns: auto auto;
     }
 }
+
 @media only screen and (max-width:750px) and (min-width:500px) {
-    .menu2,.text {
+
+    .menu2,
+    .text {
         display: none;
     }
-    .menu0{
+
+    .menu0 {
         align-items: center;
     }
-    #logo{
-        content:url("./images/instagram-short.png");
+
+    #logo {
+        content: url("./images/instagram-short.png");
         height: 32px;
     }
+
     .frame {
         grid-template-columns: auto auto;
     }
 }
-@media screen and (max-width:650px) and (min-width:501px){
+
+@media screen and (max-width:650px) and (min-width:501px) {
     .frame {
         grid-template-columns: auto auto;
     }
-    .menu2,.text{
+
+    .menu2,
+    .text {
         display: none;
     }
-    #logo{
-        content:url("./images/instagram-short.png");
+
+    #logo {
+        content: url("./images/instagram-short.png");
         height: 32px;
     }
-    #svg7{
+
+    #svg7 {
         display: none;
     }
-    .id{
+
+    .id {
         width: 70px;
     }
-    
+
 }
 
 @media screen and (max-width:499px) {
+
+    #hover1:hover,
+    #hover2:hover,
+    #hover3:hover,
+    #hover4:hover,
+    #hover5:hover,
+    #hover6:hover,
+    #hover7:hover {
+        background-color: white;
+        font-weight: normal;
+        border-radius: 20px;
+    }
 
     .menu0,
     .menu2 {
         display: none;
     }
+
     .frame {
         grid-template-columns: auto;
     }
-    .posthead{
+
+    .posthead {
         grid-template-columns: 0.4fr 3fr auto;
         width: 100vw;
     }
-    .postbottom{
+
+    .postbottom {
         width: 100vw;
     }
-    .pic{
+
+    .pic {
         width: 100vw;
         height: auto;
     }
-    .menu1{
+
+    .menu1 {
         margin-top: 50px;
         padding-bottom: 50px;
     }
-    .profile-icon{
+
+    .profile-icon {
         margin: 0px 5px;
     }
-    .bottom-menu-margin{
+
+    .bottom-menu-margin {
         margin: 0px 5px;
     }
-    #logo{
+
+    #logo {
         margin: 0px 10px;
     }
-    #svg7{
+
+    #svg7 {
         display: none;
     }
-    .story{
+
+    .story {
         width: 100vw;
     }
-    .id{
+
+    .id {
         min-width: 68px;
         max-width: 80px;
     }
-    .menu-top{
+
+    .menu-top {
         position: fixed;
         top: 0;
         background: white;
@@ -369,11 +413,13 @@ svg {
         grid-template-columns: 2fr 0.3fr 0.3fr;
         width: 100vw;
     }
-    .menu-top img{
+
+    .menu-top img {
         height: 23px;
         margin: 10px 0px;
     }
-    .menu-bottom{
+
+    .menu-bottom {
         position: fixed;
         bottom: 0;
         background: white;
@@ -383,12 +429,14 @@ svg {
         align-items: center;
         width: 100vw;
     }
-    #hover1{
+
+    #hover1 {
         border-radius: 20px;
     }
 }
-@media screen and (max-width:400px){
-    #svg6{
+
+@media screen and (max-width:400px) {
+    #svg6 {
         display: none;
     }
 }
