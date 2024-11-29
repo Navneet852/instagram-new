@@ -253,9 +253,9 @@ svg {
     background-color: #1877F2;
 }
 
-/* .pic {
-    height: 450px;
-} */
+.pic {
+    width: 470px;
+}
 
 .postbottom {
     margin: 5px 0px;
